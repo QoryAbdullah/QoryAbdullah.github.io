@@ -16,7 +16,7 @@
    <body>
     <header>
         <div class="logo">
-            <img src="../login-system/logo.png" width="40px">
+            <a href="#">logo.</a>
         </div>
         <input type="checkbox" id="click">
         <label for="click" class="mainicon">
@@ -25,7 +25,7 @@
             </div>
         </label>
         <nav>
-            <a href="../login-system/home.php" class="active">Home</a>
+            <a href="index.html" class="active">Home</a>
         </nav>
     </header>
 
@@ -48,18 +48,167 @@
             <p class="parag">selamat datang di halaman utama dashboard, di sini anda dapat melihat data yang sudah anda buat dan edit sebelumnya Sistem informasi yang mendukung membuat kinerja suatu instansi akan terlaksana dengan baik dan dapat
           menangani berbagai pengolahan data dengan menggunakan teknologi informasi. Sistem informasi dibuat untuk mempermudah dalam pengelolaan dan penepatan penyimpanan data maka dapat menghasilkan suatu informasi yang tepat dan akurat. Adanya sistem informasi yang tepat dan akurat dapat mengurangi
           terjadinya kesalahan yang tidak diinginkan sehingga dapat meningkatkan kinerja yang lebih efesien dan kecepatan operasional pada suatu instansi.</p><br>          
-            <img src="logo.png" width="225px">
+            <img src="kar.png" width="225px">
             <p class="parag">PHP adalah singkatan dari Hypertext Preprocessor, yaitu bahasa penulisan skrip yang sebenarnya mirip dengan JavaScript dan Python. Perbedaannya, PHP adalah bahasa yang biasanya digunakan untuk komunikasi sisi server, sedangkan JavaScript bisa digunakan untuk frontend dan backend. Sementara itu, Python hanya untuk sisi server (backend). Masih belum paham dengan pengertian PHP? Tenang, kami akan menjelaskan dasar-dasarnya lebih dulu sebelum Anda mempelajari PHP lebih lanjut. Kami akan mulai dengan membahas apa itu bahasa penulisan skrip atau scripting language.</p>
 </article>
     </section>
 </body>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+}
 
-.footer {
+body {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    max-height: 100vh;
+}
+
+/*nav */
+header {
+    padding: 1.7rem 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.logo a {
+    color: #244D61;
+    text-decoration: none;
+}
+
+nav a {
+    color: #244D61;
+    text-decoration: none;
+    font-size: .97rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    padding: 1rem;
+    padding: 0.4rem 1rem;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #244D61;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all.3s ease-in-out;
+}
+
+#click {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+/* Nav */
+
+section {
+    margin: 2rem 8.5rem;
+    ;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.main p {
+    margin-top: 1rem;
+    font-size: .98rem;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 1.7rem;
+}
+
+.social a {
+    color: #244D61;
+    font-size: 1rem;
+    border: 1.6px solid #244D61;
+    border-radius: 50%;
+    padding: .35rem;
+    text-align: center;
+    width: 26px;
+}
+
+.social a:hover {
+    color: #fff;
+    background-color: #244D61;
+    transition: all .3s ease-in-out;
+}
+
+.main h1 span:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.images {
+    background-image: url(/img/graph3.png);
+    background-repeat: no-repeat;
+    background-position: 0 -75px;
+}
+
+@media only screen and (max-width:480px) {
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #244D61;
+    }
+
+    header {
+        padding: 0.7rem 1rem;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        display: grid;
+        top: 75px;
+        width: calc(100% - 40px);
+        text-align: center;
+        background-color: #fff;
+        left: -100%;
+    }
+
+    #click:checked~nav {
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+
+    section {
+        margin: 1rem 1.5rem;
+    }
+
+}
+    .footer {
      padding: 18px;
      color: white;
-     background-color: #555;
+     background-color: #244D61;
      text-transform: capitalize;
      text-align: center;
      font-size: 12px;
